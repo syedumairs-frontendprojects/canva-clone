@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon-16x16.png"
+    />
+    <!-- Fonts and styles-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link href="./assets/css/editor.css" rel="stylesheet" type="text/css" />
+    <title>Canva-clone | Free online photo editor</title>
+  </head>
+  <body class="app">
+    <!-- Header Section -->
+    <header class="header">
+      <h2 class="logo">CanClone</h2>
+      <button class="dd-toggle">File</button>
+      <button class="dd-toggle">View</button>
+      <button class="dd-toggle">New</button>
+      <button class="dd-toggle">
+        <i class="fas fa-crown dd-toggle__icon"></i>
+      </button>
+      <button class="dd-toggle">
+        <i class="fas fa-bell dd-toggle__icon"></i>
+      </button>
+      <button class="dd-toggle">
+        <img
+          src="./images/user_avatar.jpg"
+          alt="User photo"
+          class="dd-toggle__img"
+        />
+        <span class="dd-toggle__text">Ahmed Khan</span>
+      </button>
+    </header>
+    <!-- App container -->
+    <div class="app__container">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <section class="menu">
+          <!-- First button -->
+          <button class="menu__button">
+            <i class="fa fa-layer-group menu__icon"></i>
+            <span class="menu__text">Templates</span>
+          </button>
+
+          <!-- Second button -->
+          <button class="menu__button menu__button--active">
+            <i class="fa fa-image menu__icon"></i>
+            <span class="menu__text">Images</span>
+          </button>
+
+          <!-- Third button -->
+          <button class="menu__button">
+            <i class="fa fa-font menu__icon"></i>
+            <span class="menu__text">Font style</span>
+          </button>
+
+          <!-- Fourth button -->
+          <button class="menu__button">
+            <i class="fa fa-shapes menu__icon"></i>
+            <span class="menu__text">Shapes</span>
+          </button>
+        </section>
+        <!-- Footer -->
+        <footer class="footer">
+          <small class="copyright"
+            >&copy; 2022 CanClone, All rights reserved</small
+          >
+        </footer>
+      </div>
+      <!-- Panel -->
+      <div class="panel">
+        <div class="panel__top">
+          <h1 class="first-heading">Images</h1>
+          <i class="fas fa-angle-double-left panel__collapse-icon"></i>
+        </div>
+
+        <div class="panel__images">
+          <img
+            class="panel__img"
+            src="https://images.unsplash.com/photo-1543096222-72de739f7917?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&fit=crop&w=280&q=100"
+            alt="Uploaded image"
+          />
+          <img
+            class="panel__img"
+            src="https://images.unsplash.com/photo-1475598322381-f1b499717dda?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&h=280&q=100"
+            alt="Uploaded image"
+          />
+          <img
+            class="panel__img"
+            src="https://images.unsplash.com/photo-1615887023516-9b6bcd559e87?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&w=280&q=100"
+            alt="Uploaded image"
+          />
+          <img
+            class="panel__img"
+            src="https://images.unsplash.com/photo-1615749190340-34c7c3b16784?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&w=280&q=100"
+            alt="Uploaded image"
+          />
+          <img
+            class="panel__img"
+            src="https://images.unsplash.com/photo-1615707547992-93435f1e7f13?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&w=280&q=100"
+            alt="Uploaded image"
+          />
+          <button class="panel__btn">
+            <i class="fas fa-plus panel__upload-icon"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Main section -->
+      <main class="main">
+        <!-- Info bar -->
+        <div class="info-bar">
+          <section class="breadcrumbs">
+            <a href="#" class="breadcrumbs-link">Facebook posts</a>
+            <i class="fas fa-angle-right breadcrumbs-icon"></i>
+            <sapn class="breadcrumbs__name">Free drinks</sapn>
+          </section>
+          <button class="button">Publish</button>
+        </div>
+
+        <!-- Editing section -->
+        <div class="artboard">
+          <section class="canvas">
+            <img
+              class="canvas__bg-img"
+              src="https://images.unsplash.com/photo-1615887023516-9b6bcd559e87?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&w=2134&q=100"
+              alt="Background image"
+            />
+            <img
+              class="canvas__fg-img"
+              src="https://images.unsplash.com/photo-1615887023516-9b6bcd559e87?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&fit=crop&w=1453&q=85"
+              alt="Foreground image"
+            />
+            <div class="canvas__circle"></div>
+            <div class="canvas__circle"></div>
+            <div class="canvas__circle"></div>
+            <div class="canvas__circle"></div>
+          </section>
+          <section class="tools">
+            <button class="tool tool--active">
+              <i class="fas fa-crop-alt tool__icon"></i>
+            </button>
+            <button class="tool">
+              <i class="fas fa-object-group tool__icon"></i>
+            </button>
+            <button class="tool">
+              <i class="fas fa-pen tool__icon"></i>
+            </button>
+            <button class="tool">
+              <i class="fas fa-trash tool__icon"></i>
+            </button>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
